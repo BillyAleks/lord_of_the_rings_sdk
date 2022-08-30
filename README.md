@@ -16,6 +16,8 @@ Simple to install and easy to use.
 
 [SDK Initialization](#sdk-initialization)
 
+[Before use](#before-use)
+
 [SDK Methods](#sdk-methods)
 
 - [Books](#books)
@@ -277,9 +279,15 @@ For making a usage of current SDK more slight and safe we are not returning or t
 
 ### Testing
 
-Testing is available for development purpose, you may discover test cases in our [GitHub Repository]([http://g](https://github.com/BillyAleks))
+Testing is available for development purpose, you may discover test cases in our [GitHub Repository](https://github.com/BillyAleks/lord_of_the_rings_sdk)
 
 It's developed with a help of **Jest** testing framework on a unit, integration and acceptance levels.
+
+For this you will need to install development dependencies first:
+
+```bash
+npm i
+```
 
 **Unit tests**
 To run unit tests, execute following script:
@@ -305,13 +313,13 @@ npm run test:e2e
 
 ### Design
 
-If you are curious about architecture of current SDK, please discover our [design.md](design.md) to understand it better
+If you are curious about architecture of current SDK, please discover our [design.md](design.md) to understand it better.
 
 ---
 
 ## Contacts
 
-If you have any purposes or troubles with current SDK - please open an issue in our [GitHub Repository]([http://g](https://github.com/BillyAleks)).
+If you have any purposes or troubles with current SDK - please open an issue in our [GitHub Repository](https://github.com/BillyAleks/lord_of_the_rings_sdk).
 
 Our team will take it to work right after.
 

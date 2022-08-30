@@ -28,5 +28,9 @@
   "exports": {
     "import": "./index.mjs",
     "require": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BillyAleks/lord_of_the_rings_sdk"
   }
 }
