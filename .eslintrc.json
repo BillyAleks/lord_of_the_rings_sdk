@@ -1,0 +1,59 @@
+{
+    "root": true,
+    "extends": ["airbnb-base"],
+    "parserOptions": {
+        "es6": true,
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "objectLiteralDuplicateProperties": false
+        },
+        "requireConfigFile": false
+    },
+    "rules": {
+        "no-use-before-define": "off",
+        "no-param-reassign": ["error", {
+            "props": false
+        }],
+        "object-curly-newline": "off",
+        "no-underscore-dangle": "off",
+        "arrow-parens": ["error", "always"],
+        "import/extensions": ["error", {
+            "js": "always"
+        }],
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": true
+        }],
+        "import/prefer-default-export": "off",
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "max-len": ["error", {
+            "code": 140
+        }],
+        "no-console": ["error", {
+            "allow": ["warn", "error", "log"]
+        }],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline"
+            }
+        ],
+        "no-unused-vars": ["error", {
+            "vars": "all",
+            "args": "none",
+            "argsIgnorePattern": "^_"
+        }]
+    },
+    "overrides": [{
+        "files": "test/**/*",
+        "env": {
+            "jest": true
+        },
+        "rules": {
+            "no-unused-expressions": "off"
+        }
+    }]
+}
