@@ -48,7 +48,7 @@ The complete installation instructions is right below.
 All you need to make an SDK installed is just run the following script in your command line:
 
 ```bash
-npm i bilichenko_aleksandr_sdk
+npm i bilichenko-aleksandr-sdk
 ```
 
 ## SDK Initialization
@@ -71,7 +71,7 @@ It has two properties
 Common JS SDK initialization example with setting cache reset to 10 seconds and enabling logger:
 
 ```javascript
-const { LordOfTheRingsSdk } = require('bilichenko_aleksandr_sdk');
+const { LordOfTheRingsSdk } = require('bilichenko-aleksandr-sdk');
 
 const sdk = LordOfTheRingsSdk('12345ApiKey', { cacheTime: 10000, loggerEnabled: true });
 ```
@@ -81,7 +81,7 @@ const sdk = LordOfTheRingsSdk('12345ApiKey', { cacheTime: 10000, loggerEnabled: 
 ES Modules SDK initialization example without enabling it features:
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk('12345ApiKey');
 ```
@@ -91,7 +91,7 @@ const sdk = LordOfTheRingsSdk('12345ApiKey');
 TypeScript example. Nest.js version of initializing SDK inside a controller, with a partial options enabled:
 
 ```typescript
-import { LordOfTheRingsSdk, ICharacterWithQuotesResponse } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk, ICharacterWithQuotesResponse } from 'bilichenko-aleksandr-sdk';
 
 @Get()
     async getCharacterQuotes(): Promise<ICharacterWithQuotesResponse | null> {
@@ -144,7 +144,7 @@ Initialized SDK includes five blocks of functions to operate with specific entit
 - getBookWithChaptersTitles(id);
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk(apiKey);
 const params = { limit: 2 };
@@ -160,7 +160,7 @@ sdk.books.getBookList(params)
 - getChapter(id);
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk(apiKey);
 sdk.chapters.searchChaptersByName('on')
@@ -179,7 +179,7 @@ sdk.chapters.searchChaptersByName('on')
 - getQuotesOfCharacter(id, params);
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk(apiKey);
 const params = { limit: 2 };
@@ -195,7 +195,7 @@ sdk.characters.searchCharactersByRace('human', params)
 - getQuotesOfMovie(id, params);
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk(apiKey);
 sdk.movies.getAllMovies()
@@ -209,7 +209,7 @@ sdk.movies.getAllMovies()
 - getRandomQuote();
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk(apiKey);
 sdk.quotes.getRandomQuote()
@@ -240,7 +240,7 @@ You have to provide an object to **sort**, which will have a field name as a key
 **Sorting example:**
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk(apiKey);
 const params = { sort: { name: 'desc' } };
@@ -251,7 +251,7 @@ sdk.movies.getAllMovies(params)
 **Filtering example:**
 
 ```javascript
-import { LordOfTheRingsSdk } from 'bilichenko_aleksandr_sdk';
+import { LordOfTheRingsSdk } from 'bilichenko-aleksandr-sdk';
 
 const sdk = LordOfTheRingsSdk(apiKey);
 const params = { filter: { name: '=Gandalf' } };

@@ -1,6 +1,6 @@
 {
   "name": "bilichenko-aleksandr-sdk",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Awesome Lord Of The Rings SDK for easily integration with fans API",
   "main": "index.js",
   "files": [
@@ -32,5 +32,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/BillyAleks/lord_of_the_rings_sdk"
-  }
+  },
+  "keywords": ["sdk", "lord-of-the-rings"]
 }
